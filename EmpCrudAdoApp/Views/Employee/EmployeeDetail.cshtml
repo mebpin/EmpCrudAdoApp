@@ -1,0 +1,19 @@
+﻿@model EmpCrudAdoApp.Models.Employee
+
+@{
+    ViewData["Title"] = "EmployeeDetail";
+}
+<h1>Detail of @Model.Name</h1>
+<div>
+    <p align="center">
+        <h5> Employee ID : @Model.Id</h5>
+        <h5> Employee Name : @Model.Name</h5>
+        <h5> Employee Address : @Model.Address</h5>
+        <h5> Employee Phone Number : @Model.PhoneNo</h5>
+    </p>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
